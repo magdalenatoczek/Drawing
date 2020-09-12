@@ -53,12 +53,27 @@ class SimpleBar: UIView {
         var lineEndPosition : CGFloat = lineStartPosition + (maxValue * unitForHeight)
        
         //lines
-        for x in 0...15 {
+        for x in (0...15).reversed() {
              ctx?.saveGState()
             let path = UIBezierPath(rect: CGRect(x: barStartWidth, y: lineStartPosition, width: viewWidthMinusPading, height: 1))
+            
+            
+            let font = UIFont(name: "Avenir-Medium", size:8)!
+            let labelAttributes = [NSAttributedString.Key.font : font,
+                                             NSAttributedString.Key.foregroundColor : UIColor.black]
+                      
+            let numberLabel = String(x) as NSString
+                      
+                      
+            numberLabel.draw(at: CGPoint(x:barStartWidth - 10 , y: lineStartPosition - 4), withAttributes: labelAttributes)
+                    
+            
             lineStartPosition = lineStartPosition + unitForHeight
             #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1).setFill()
             path.fill()
+            
+          
+            
             ctx?.restoreGState()
         }
         
@@ -72,6 +87,7 @@ class SimpleBar: UIView {
         var startPosition = barStartWidth + paddingForColumns
     
         
+        var x = 0
         for value in dataValues {
            
             ctx?.saveGState()
@@ -79,6 +95,16 @@ class SimpleBar: UIView {
             
             let path = UIBezierPath(rect: CGRect(x: startPosition, y: lineEndPosition, width: columnWidth, height: heightColumn))
             
+            
+            let font = UIFont(name: "Avenir-Medium", size:8)!
+            let labelAttributes = [NSAttributedString.Key.font : font,
+                                                     NSAttributedString.Key.foregroundColor : UIColor.black]
+                              
+            let dayLabel = String(dataDays[x]) as NSString
+                   x = x + 1
+                              
+            dayLabel.draw(at: CGPoint(x:startPosition + 3 , y: lineEndPosition + 5), withAttributes: labelAttributes)
+        
             startPosition = startPosition + columnWidth + paddingForColumns
             
             #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1).setFill()
