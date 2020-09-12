@@ -56,7 +56,7 @@
                                                     <constraint firstAttribute="height" constant="240" id="lOp-5o-eHI"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-Xn-RsB">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-Xn-RsB" customClass="SimpleBar" customModule="Drawing" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="1320" width="374" height="240"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>

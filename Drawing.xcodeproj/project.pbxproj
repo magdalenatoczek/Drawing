@@ -16,6 +16,7 @@
 		AA83DDAB250CC019005C2921 /* StrokesFills.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83DDAA250CC019005C2921 /* StrokesFills.swift */; };
 		AAA571A2250CE0E700D514E9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA571A1250CE0E700D514E9 /* GradientView.swift */; };
 		AAA571A4250CEB1700D514E9 /* TransformationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA571A3250CEB1700D514E9 /* TransformationsView.swift */; };
+		AAA571A6250CFD4700D514E9 /* SimpleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA571A5250CFD4700D514E9 /* SimpleBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AA83DDAA250CC019005C2921 /* StrokesFills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokesFills.swift; sourceTree = "<group>"; };
 		AAA571A1250CE0E700D514E9 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		AAA571A3250CEB1700D514E9 /* TransformationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationsView.swift; sourceTree = "<group>"; };
+		AAA571A5250CFD4700D514E9 /* SimpleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				AA83DDAA250CC019005C2921 /* StrokesFills.swift */,
 				AAA571A1250CE0E700D514E9 /* GradientView.swift */,
 				AAA571A3250CEB1700D514E9 /* TransformationsView.swift */,
+				AAA571A5250CFD4700D514E9 /* SimpleBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				AA83DD96250CB2D8005C2921 /* ViewController.swift in Sources */,
 				AA83DD92250CB2D8005C2921 /* AppDelegate.swift in Sources */,
+				AAA571A6250CFD4700D514E9 /* SimpleBar.swift in Sources */,
 				AAA571A2250CE0E700D514E9 /* GradientView.swift in Sources */,
 				AAA571A4250CEB1700D514E9 /* TransformationsView.swift in Sources */,
 				AA83DD94250CB2D8005C2921 /* SceneDelegate.swift in Sources */,
