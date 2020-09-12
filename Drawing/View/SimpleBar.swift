@@ -107,7 +107,10 @@ class SimpleBar: UIView {
         
             startPosition = startPosition + columnWidth + paddingForColumns
             
-            #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1).setFill()
+            let columnRandomColor = UIColor(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: 1.0)
+            
+            
+            columnRandomColor.setFill()
             path.fill()
             ctx?.restoreGState()
             
