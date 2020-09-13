@@ -22,6 +22,7 @@
 		AAA571B0250E1B5E00D514E9 /* ShapeTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA571AF250E1B5E00D514E9 /* ShapeTransformation.swift */; };
 		AAA571B2250E274400D514E9 /* RingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA571B1250E274400D514E9 /* RingGraph.swift */; };
 		AAB3C8BC250E45D500B25F8A /* LoadingRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3C8BB250E45D500B25F8A /* LoadingRing.swift */; };
+		AAB3C8BE250E565F00B25F8A /* LoadingRingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3C8BD250E565F00B25F8A /* LoadingRingDots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		AAA571AF250E1B5E00D514E9 /* ShapeTransformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeTransformation.swift; sourceTree = "<group>"; };
 		AAA571B1250E274400D514E9 /* RingGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingGraph.swift; sourceTree = "<group>"; };
 		AAB3C8BB250E45D500B25F8A /* LoadingRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingRing.swift; sourceTree = "<group>"; };
+		AAB3C8BD250E565F00B25F8A /* LoadingRingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingRingDots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				AAA571AF250E1B5E00D514E9 /* ShapeTransformation.swift */,
 				AAA571B1250E274400D514E9 /* RingGraph.swift */,
 				AAB3C8BB250E45D500B25F8A /* LoadingRing.swift */,
+				AAB3C8BD250E565F00B25F8A /* LoadingRingDots.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				AAA571A2250CE0E700D514E9 /* GradientView.swift in Sources */,
 				AAB3C8BC250E45D500B25F8A /* LoadingRing.swift in Sources */,
 				AAA571A4250CEB1700D514E9 /* TransformationsView.swift in Sources */,
+				AAB3C8BE250E565F00B25F8A /* LoadingRingDots.swift in Sources */,
 				AA83DD94250CB2D8005C2921 /* SceneDelegate.swift in Sources */,
 				AA83DDAB250CC019005C2921 /* StrokesFills.swift in Sources */,
 				AAA571B0250E1B5E00D514E9 /* ShapeTransformation.swift in Sources */,

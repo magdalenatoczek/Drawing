@@ -88,7 +88,7 @@
                                                             <constraint firstAttribute="height" constant="240" id="iD8-qA-tre"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6p-Bt-N27">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6p-Bt-N27" customClass="LoadingRingDots" customModule="Drawing" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="2340" width="374" height="240"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
