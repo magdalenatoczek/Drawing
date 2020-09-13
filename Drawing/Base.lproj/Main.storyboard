@@ -24,14 +24,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fB5-Xf-4Zz">
                                                 <rect key="frame" x="20" y="20" width="374" height="4920"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGw-oO-6VZ">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGw-oO-6VZ" customClass="LoadingRingDots" customModule="Drawing" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="240"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="240" id="LRV-l6-Qd4"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWr-HQ-vsu">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWr-HQ-vsu" customClass="LoadingRing" customModule="Drawing" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="260" width="374" height="240"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
@@ -88,14 +88,14 @@
                                                             <constraint firstAttribute="height" constant="240" id="iD8-qA-tre"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6p-Bt-N27" customClass="LoadingRingDots" customModule="Drawing" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6p-Bt-N27">
                                                         <rect key="frame" x="0.0" y="2340" width="374" height="240"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="240" id="AM3-2i-Ue5"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZk-6Q-RN8" customClass="LoadingRing" customModule="Drawing" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZk-6Q-RN8">
                                                         <rect key="frame" x="0.0" y="2600" width="374" height="240"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>

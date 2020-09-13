@@ -14,7 +14,7 @@ class LoadingRingDots: UIView {
             super.didMoveToSuperview()
         
     
-        makeProgressBarMadeOfCircles(howManyCircles: 6, bigDiamiter: 90, smallCircleSize: 20)
+        makeProgressBarMadeOfCircles(howManyCircles: 8, bigDiamiter: 120, smallCircleSize: 20)
      
             
     }
@@ -26,7 +26,7 @@ class LoadingRingDots: UIView {
         
         
         let firstPositionX = frame.width/2 - smallCircleSize/2
-        let firstPositionY :CGFloat = 0.0
+        let firstPositionY : CGFloat = -smallCircleSize/2
         
 
         var firstAngle : CGFloat = CGFloat(360/howManyCircles)
@@ -52,6 +52,35 @@ class LoadingRingDots: UIView {
             shapleLayer.frame = frame
             shapleLayer.path = circle.cgPath
             shapleLayer.fillColor = UIColor(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: 1.0).cgColor
+            
+            
+            
+            let animation = CABasicAnimation(keyPath: "opacity")
+            animation.fromValue = 1.0
+            animation.toValue = 0.2
+            animation.duration = 2
+            animation.autoreverses = true
+            animation.repeatCount = .infinity
+            animation.timingFunction = CAMediaTimingFunction(name: .linear)
+            
+          
+            let animation2 = CABasicAnimation(keyPath: "transform")
+            animation2.valueFunction = CAValueFunction(name: CAValueFunctionName.rotateZ)
+            
+            animation2.duration = 4
+            animation2.byValue = 2 * Double.pi
+//            animation.autoreverses = true
+            animation2.repeatCount = .infinity
+            animation2.timingFunction = CAMediaTimingFunction(name: .linear)
+                   
+    
+           
+            shapleLayer.add(animation, forKey: nil)
+            shapleLayer.add(animation2, forKey: nil)
+            
+            
+            
+            
             layer.addSublayer(shapleLayer)
             
             
