@@ -11,16 +11,7 @@ import UIKit
 @IBDesignable
 class SimpleBar: UIView {
 
-    
-//    let data: [String: CGFloat] = [
-//
-//        "Mon" : 9,
-//        "Tue" : 5,
-//        "Wen" : 3,
-//        "Thu" : 15,
-//        "Fri" : 11,
-//    ]
-//
+
     
     let dataDays: [String] = [ "Mon", "Tue", "Wen", "Thu", "Fri" ]
     let dataValues: [CGFloat] = [9,5,3,15,11]
@@ -48,9 +39,9 @@ class SimpleBar: UIView {
         
         
         
-        var barStartWidth : CGFloat = (viewWidth - viewWidthMinusPading)/2
+        let barStartWidth : CGFloat = (viewWidth - viewWidthMinusPading)/2
         var lineStartPosition : CGFloat = (viewWidth - viewWidthMinusPading)/2
-        var lineEndPosition : CGFloat = lineStartPosition + (maxValue * unitForHeight)
+        let lineEndPosition : CGFloat = lineStartPosition + (maxValue * unitForHeight)
        
         //lines
         for x in (0...15).reversed() {
@@ -83,7 +74,7 @@ class SimpleBar: UIView {
         
         let columnWidth: CGFloat = 20
         let paddingForColumns = (viewWidthMinusPading - ((howManyItems + 2) * columnWidth)) / howManyItems
-        print(paddingForColumns)
+        
         var startPosition = barStartWidth + paddingForColumns
     
         
