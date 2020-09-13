@@ -15,7 +15,6 @@ class TransformationsView: UIView {
 
     override func draw(_ rect: CGRect) {
         
-        let ctx = UIGraphicsGetCurrentContext()
         let rotateAngle: CGFloat = 45 * .pi/180
     
         
@@ -30,7 +29,7 @@ class TransformationsView: UIView {
         let squarePath = UIBezierPath(roundedRect: CGRect(x: -squareWidth/2, y: -squareWidth/2, width: squareWidth, height: squareWidth), cornerRadius: 20)
         
         
-        var transform = CGAffineTransform(translationX: viewWidth/2, y: viewHeight/2).rotated(by: rotateAngle).scaledBy(x: 1.2, y: 1.2)
+        let transform = CGAffineTransform(translationX: viewWidth/2, y: viewHeight/2).rotated(by: rotateAngle).scaledBy(x: 1.2, y: 1.2)
     
         squarePath.apply(transform)
         // or

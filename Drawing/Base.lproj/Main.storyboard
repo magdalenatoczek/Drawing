@@ -7,115 +7,180 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Shapes With Shape Layer-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ShapesWithShapeLayer" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="5000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0uh-wW-Tzj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="5000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGa-gA-8b6" userLabel="ContainerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="4960"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGw-oO-6VZ">
-                                                <rect key="frame" x="20" y="20" width="374" height="240"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="LRV-l6-Qd4"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWr-HQ-vsu">
-                                                <rect key="frame" x="20" y="280" width="374" height="240"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="kfG-o3-KS4"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ejd-2f-b5c">
-                                                <rect key="frame" x="20" y="540" width="374" height="240"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="VER-vN-iGU"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boB-rc-Nfe">
-                                                <rect key="frame" x="20" y="800" width="374" height="240"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="Jc6-tA-Epw"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHX-cg-dYV">
-                                                <rect key="frame" x="20" y="1060" width="374" height="240"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="lOp-5o-eHI"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-Xn-RsB" customClass="SimpleBar" customModule="Drawing" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="1320" width="374" height="240"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="BXk-gv-KSy"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4o-Rs-wkS" customClass="TransformationsView" customModule="Drawing" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="1580" width="374" height="240"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="odE-Mh-xhG"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9W-72-MCJ" customClass="GradientView" customModule="Drawing" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="1840" width="374" height="240"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="UC5-aL-7DH"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqO-An-U97" customClass="StrokesFills" customModule="Drawing" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="2100" width="374" height="240"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="0sr-Gl-3Nq"/>
-                                                    <constraint firstAttribute="height" constant="240" id="iD8-qA-tre"/>
-                                                </constraints>
-                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fB5-Xf-4Zz">
+                                                <rect key="frame" x="20" y="20" width="374" height="4920"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGw-oO-6VZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="LRV-l6-Qd4"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWr-HQ-vsu">
+                                                        <rect key="frame" x="0.0" y="260" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="kfG-o3-KS4"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ejd-2f-b5c">
+                                                        <rect key="frame" x="0.0" y="520" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="VER-vN-iGU"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boB-rc-Nfe">
+                                                        <rect key="frame" x="0.0" y="780" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="Jc6-tA-Epw"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHX-cg-dYV">
+                                                        <rect key="frame" x="0.0" y="1040" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="lOp-5o-eHI"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-Xn-RsB">
+                                                        <rect key="frame" x="0.0" y="1300" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="BXk-gv-KSy"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4o-Rs-wkS">
+                                                        <rect key="frame" x="0.0" y="1560" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="odE-Mh-xhG"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9W-72-MCJ">
+                                                        <rect key="frame" x="0.0" y="1820" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="UC5-aL-7DH"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqO-An-U97">
+                                                        <rect key="frame" x="0.0" y="2080" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="0sr-Gl-3Nq"/>
+                                                            <constraint firstAttribute="height" constant="240" id="iD8-qA-tre"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6p-Bt-N27">
+                                                        <rect key="frame" x="0.0" y="2340" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="AM3-2i-Ue5"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZk-6Q-RN8">
+                                                        <rect key="frame" x="0.0" y="2600" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="Yhz-nK-sqZ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgX-1B-tit" customClass="RingGraph" customModule="Drawing" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="2860" width="374" height="240"/>
+                                                        <subviews>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HsP-Ph-S95">
+                                                                <rect key="frame" x="18" y="200" width="338" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="TAr-tt-HhG"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XUH-6E-90F"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="HsP-Ph-S95" secondAttribute="trailing" constant="20" id="5Ga-NM-ykY"/>
+                                                            <constraint firstAttribute="height" constant="240" id="8zy-I2-0Wf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="HsP-Ph-S95" secondAttribute="bottom" constant="10" id="Wdt-H7-k8C"/>
+                                                            <constraint firstItem="HsP-Ph-S95" firstAttribute="leading" secondItem="xgX-1B-tit" secondAttribute="leading" constant="20" id="Y5z-Z9-tZ2"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNh-3Q-ayu" customClass="ShapeTransformation" customModule="Drawing" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="3120" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="zDq-4c-asz"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZg-pw-P5h" customClass="ShapeMask" customModule="Drawing" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="3380" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="7rJ-vW-Dby"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woB-C4-7PV" customClass="Shapes" customModule="Drawing" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="3640" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="j8i-bu-tJ9"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AZ-qb-Ogo" customClass="SimpleBar" customModule="Drawing" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="3900" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="Wxs-l5-j1E"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngI-yS-WMo" customClass="TransformationsView" customModule="Drawing" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="4160" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="g4K-jN-kkp"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFZ-G7-Cgt" customClass="GradientView" customModule="Drawing" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="4420" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="JFc-yM-w9l"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tly-X6-M3U" customClass="StrokesFills" customModule="Drawing" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="4680" width="374" height="240"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="p0p-DQ-1v0"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="sWr-HQ-vsu" firstAttribute="leading" secondItem="HGa-gA-8b6" secondAttribute="leading" constant="20" id="3YO-Ec-F4u"/>
-                                            <constraint firstItem="WpF-Xn-RsB" firstAttribute="leading" secondItem="HGa-gA-8b6" secondAttribute="leading" constant="20" id="5iZ-ve-1w6"/>
-                                            <constraint firstAttribute="trailing" secondItem="o9W-72-MCJ" secondAttribute="trailing" constant="20" id="9Eb-Df-cRE"/>
-                                            <constraint firstItem="boB-rc-Nfe" firstAttribute="top" secondItem="Ejd-2f-b5c" secondAttribute="bottom" constant="20" id="Hko-Rf-Bsp"/>
-                                            <constraint firstItem="L4o-Rs-wkS" firstAttribute="leading" secondItem="HGa-gA-8b6" secondAttribute="leading" constant="20" id="Hqy-Je-0hd"/>
-                                            <constraint firstItem="Ejd-2f-b5c" firstAttribute="top" secondItem="sWr-HQ-vsu" secondAttribute="bottom" constant="20" id="HrR-E1-bSv"/>
-                                            <constraint firstItem="sWr-HQ-vsu" firstAttribute="top" secondItem="cGw-oO-6VZ" secondAttribute="bottom" constant="20" id="ILF-nf-Q27"/>
-                                            <constraint firstItem="cGw-oO-6VZ" firstAttribute="leading" secondItem="HGa-gA-8b6" secondAttribute="leading" constant="20" id="JfJ-q0-Laq"/>
-                                            <constraint firstItem="cGw-oO-6VZ" firstAttribute="top" secondItem="HGa-gA-8b6" secondAttribute="top" constant="20" id="KB1-n0-yCg"/>
-                                            <constraint firstItem="Ejd-2f-b5c" firstAttribute="leading" secondItem="HGa-gA-8b6" secondAttribute="leading" constant="20" id="NZC-gq-k82"/>
-                                            <constraint firstItem="o9W-72-MCJ" firstAttribute="leading" secondItem="HGa-gA-8b6" secondAttribute="leading" constant="20" id="Ocg-Sc-eaW"/>
-                                            <constraint firstAttribute="trailing" secondItem="aqO-An-U97" secondAttribute="trailing" constant="20" id="RHp-di-zbn"/>
-                                            <constraint firstAttribute="trailing" secondItem="cGw-oO-6VZ" secondAttribute="trailing" constant="20" id="RsI-46-jTH"/>
-                                            <constraint firstItem="WpF-Xn-RsB" firstAttribute="top" secondItem="uHX-cg-dYV" secondAttribute="bottom" constant="20" id="TRj-uT-5Ba"/>
-                                            <constraint firstAttribute="trailing" secondItem="WpF-Xn-RsB" secondAttribute="trailing" constant="20" id="TUs-dd-cik"/>
-                                            <constraint firstAttribute="height" constant="2500" id="ZUR-f4-J5u"/>
-                                            <constraint firstItem="aqO-An-U97" firstAttribute="leading" secondItem="HGa-gA-8b6" secondAttribute="leading" constant="20" id="aCM-Xy-SIW"/>
-                                            <constraint firstItem="L4o-Rs-wkS" firstAttribute="top" secondItem="WpF-Xn-RsB" secondAttribute="bottom" constant="20" id="amK-ug-tJH"/>
-                                            <constraint firstAttribute="trailing" secondItem="boB-rc-Nfe" secondAttribute="trailing" constant="20" id="ckR-LX-Vjc"/>
-                                            <constraint firstItem="uHX-cg-dYV" firstAttribute="leading" secondItem="HGa-gA-8b6" secondAttribute="leading" constant="20" id="dZV-Eq-i0F"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ejd-2f-b5c" secondAttribute="trailing" constant="20" id="j0X-fl-t83"/>
-                                            <constraint firstAttribute="trailing" secondItem="uHX-cg-dYV" secondAttribute="trailing" constant="20" id="m0d-Wq-v4x"/>
-                                            <constraint firstItem="aqO-An-U97" firstAttribute="top" secondItem="o9W-72-MCJ" secondAttribute="bottom" constant="20" id="mDk-Hc-Yxh"/>
-                                            <constraint firstItem="boB-rc-Nfe" firstAttribute="leading" secondItem="HGa-gA-8b6" secondAttribute="leading" constant="20" id="n8F-xk-9Sj"/>
-                                            <constraint firstAttribute="trailing" secondItem="sWr-HQ-vsu" secondAttribute="trailing" constant="20" id="oO2-Kg-mYz"/>
-                                            <constraint firstAttribute="trailing" secondItem="L4o-Rs-wkS" secondAttribute="trailing" constant="20" id="oZe-79-sah"/>
-                                            <constraint firstItem="o9W-72-MCJ" firstAttribute="top" secondItem="L4o-Rs-wkS" secondAttribute="bottom" constant="20" id="v9m-Vg-8mx"/>
-                                            <constraint firstItem="uHX-cg-dYV" firstAttribute="top" secondItem="boB-rc-Nfe" secondAttribute="bottom" constant="20" id="vTi-uE-V9v"/>
+                                            <constraint firstItem="fB5-Xf-4Zz" firstAttribute="leading" secondItem="HGa-gA-8b6" secondAttribute="leading" constant="20" id="QKf-lQ-urr"/>
+                                            <constraint firstItem="fB5-Xf-4Zz" firstAttribute="top" secondItem="HGa-gA-8b6" secondAttribute="top" constant="20" id="gBU-sh-t5D"/>
+                                            <constraint firstAttribute="bottom" secondItem="fB5-Xf-4Zz" secondAttribute="bottom" constant="20" id="iAw-Yr-prj"/>
+                                            <constraint firstAttribute="trailing" secondItem="fB5-Xf-4Zz" secondAttribute="trailing" constant="20" id="jCX-FL-bNf"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -137,29 +202,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <size key="freeformSize" width="414" height="2500"/>
+                    <size key="freeformSize" width="414" height="5000"/>
                     <connections>
-                        <outlet property="shapesView" destination="uHX-cg-dYV" id="6od-yV-nga"/>
+                        <outlet property="ringGraphView" destination="xgX-1B-tit" id="YJT-2Z-6Ce"/>
+                        <outlet property="slider" destination="HGa-gA-8b6" id="Shn-Tu-MCv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="123.91304347826087"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="xSW-tk-6fj">
-            <objects>
-                <viewController id="Yus-JI-fLf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jXR-eC-tJA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Oz3-fv-8dB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KoI-1J-lu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="842" y="-593"/>
         </scene>
     </scenes>
 </document>
