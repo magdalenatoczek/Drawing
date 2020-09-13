@@ -58,7 +58,7 @@ class LoadingRingDots: UIView {
             let animation = CABasicAnimation(keyPath: "opacity")
             animation.fromValue = 1.0
             animation.toValue = 0.2
-            animation.duration = 2
+            animation.duration = 4
             animation.autoreverses = true
             animation.repeatCount = .infinity
             animation.timingFunction = CAMediaTimingFunction(name: .linear)
@@ -66,17 +66,27 @@ class LoadingRingDots: UIView {
           
             let animation2 = CABasicAnimation(keyPath: "transform")
             animation2.valueFunction = CAValueFunction(name: CAValueFunctionName.rotateZ)
-            
+
             animation2.duration = 4
             animation2.byValue = 2 * Double.pi
-//            animation.autoreverses = true
+
             animation2.repeatCount = .infinity
             animation2.timingFunction = CAMediaTimingFunction(name: .linear)
+            
+        
                    
-    
+//
+//            let anGropu = CAAnimationGroup()
+//            anGropu.animations = [animation, animation2]
+//            anGropu.duration = 4
+//            anGropu.repeatCount = .infinity
+//            shapleLayer.add(anGropu, forKey: nil)
            
+            
+
             shapleLayer.add(animation, forKey: nil)
             shapleLayer.add(animation2, forKey: nil)
+          
             
             
             
