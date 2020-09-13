@@ -26,7 +26,7 @@ class MainVC: UIViewController {
     
     
     @IBAction func sliderChanged(_ sender: UISlider) {
-        print (sender.value)
+      
         
         ringGraphView.changeTheStrokeEnd(newValueFromSlider: CGFloat(sender.value))
         

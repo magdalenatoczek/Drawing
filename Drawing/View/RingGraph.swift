@@ -12,7 +12,7 @@ import UIKit
 class RingGraph: UIView {
 
     let padding: CGFloat = 70
-    var stokeEndVariable: CGFloat = 0.01
+    var stokeEndVariable: CGFloat = 0.0
     
     let circleColorLayer = CAShapeLayer()
 
@@ -53,6 +53,7 @@ class RingGraph: UIView {
                let gradientLayer = CAGradientLayer()
                gradientLayer.frame = bounds
                let colors: [CGColor] = [#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1).cgColor,#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).cgColor]
+               gradientLayer.locations = [0.0 , 1.0]
                gradientLayer.colors = colors
                gradientLayer.mask = circleColorLayer
         
