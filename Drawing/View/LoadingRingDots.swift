@@ -58,43 +58,38 @@ class LoadingRingDots: UIView {
             let animation = CABasicAnimation(keyPath: "opacity")
             animation.fromValue = 1.0
             animation.toValue = 0.2
-            animation.duration = 4
-            animation.autoreverses = true
-            animation.repeatCount = .infinity
-            animation.timingFunction = CAMediaTimingFunction(name: .linear)
-            
-          
+         
+    
             let animation2 = CABasicAnimation(keyPath: "transform")
             animation2.valueFunction = CAValueFunction(name: CAValueFunctionName.rotateZ)
-
-            animation2.duration = 4
             animation2.byValue = 2 * Double.pi
 
-            animation2.repeatCount = .infinity
-            animation2.timingFunction = CAMediaTimingFunction(name: .linear)
-            
-        
-                   
-//
-//            let anGropu = CAAnimationGroup()
-//            anGropu.animations = [animation, animation2]
-//            anGropu.duration = 4
-//            anGropu.repeatCount = .infinity
-//            shapleLayer.add(anGropu, forKey: nil)
-           
+            let animation3 = CABasicAnimation(keyPath: "transform.scale")
+            animation3.valueFunction = CAValueFunction(name: CAValueFunctionName.scale)
+            animation3.fromValue = [1,1,1]
+            animation3.toValue = [0.5,0.5,0]
+          
             
 
-            shapleLayer.add(animation, forKey: nil)
-            shapleLayer.add(animation2, forKey: nil)
-          
+            let anGropu = CAAnimationGroup()
+            anGropu.animations = [animation, animation2, animation3]
+            anGropu.duration = 4
+            anGropu.timingFunction =  CAMediaTimingFunction(name: .linear)
+            anGropu.repeatCount = .infinity
+            anGropu.autoreverses = true
+            shapleLayer.add(anGropu, forKey: nil)
+           
+            
+//
+//            shapleLayer.add(animation, forKey: nil)
+//            shapleLayer.add(animation2, forKey: nil)
+//            shapleLayer.add(animation3, forKey: nil)
             
             
             
             
             layer.addSublayer(shapleLayer)
-            
-            
-             firstAngle = firstAngle + bevel
+            firstAngle = firstAngle + bevel
             
             
             
