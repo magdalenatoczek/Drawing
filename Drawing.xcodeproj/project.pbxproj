@@ -23,6 +23,7 @@
 		AAA571B2250E274400D514E9 /* RingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA571B1250E274400D514E9 /* RingGraph.swift */; };
 		AAB3C8BC250E45D500B25F8A /* LoadingRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3C8BB250E45D500B25F8A /* LoadingRing.swift */; };
 		AAB3C8BE250E565F00B25F8A /* LoadingRingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3C8BD250E565F00B25F8A /* LoadingRingDots.swift */; };
+		AAE95E00250FB1E200A22B95 /* RotatingLoadingRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE95DFF250FB1E200A22B95 /* RotatingLoadingRing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		AAA571B1250E274400D514E9 /* RingGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingGraph.swift; sourceTree = "<group>"; };
 		AAB3C8BB250E45D500B25F8A /* LoadingRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingRing.swift; sourceTree = "<group>"; };
 		AAB3C8BD250E565F00B25F8A /* LoadingRingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingRingDots.swift; sourceTree = "<group>"; };
+		AAE95DFF250FB1E200A22B95 /* RotatingLoadingRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingLoadingRing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				AAA571B1250E274400D514E9 /* RingGraph.swift */,
 				AAB3C8BB250E45D500B25F8A /* LoadingRing.swift */,
 				AAB3C8BD250E565F00B25F8A /* LoadingRingDots.swift */,
+				AAE95DFF250FB1E200A22B95 /* RotatingLoadingRing.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				AAA571B2250E274400D514E9 /* RingGraph.swift in Sources */,
 				AA83DD96250CB2D8005C2921 /* MainVC.swift in Sources */,
+				AAE95E00250FB1E200A22B95 /* RotatingLoadingRing.swift in Sources */,
 				AA83DD92250CB2D8005C2921 /* AppDelegate.swift in Sources */,
 				AAA571AE250E182D00D514E9 /* Shapes.swift in Sources */,
 				AAA571A6250CFD4700D514E9 /* SimpleBar.swift in Sources */,

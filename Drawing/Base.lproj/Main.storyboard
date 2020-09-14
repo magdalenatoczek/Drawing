@@ -38,7 +38,7 @@
                                                             <constraint firstAttribute="height" constant="240" id="kfG-o3-KS4"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ejd-2f-b5c">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ejd-2f-b5c" customClass="RotatingLoadingRing" customModule="Drawing" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="520" width="374" height="240"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
