@@ -42,7 +42,7 @@ class CustomTempControl: UIControl {
     let ballLayer = BallLayer()
     
     let ringWidth: CGFloat = 30.0
-    let maxTemperature : Double = 30
+    let maxTemperature : Double = 31
     let padding: CGFloat = 10
    
     var textFont = UIFont.boldSystemFont(ofSize: 40)
@@ -195,7 +195,7 @@ class CustomTempControl: UIControl {
         let radians = Double (atan2(vectorY/d, vectorX/d))
         let degrees = (radians * 180) / Double.pi
         let result = degrees >= 0 ? degrees : degrees + 360
-        print(result)
+       
         return result
  
     }
