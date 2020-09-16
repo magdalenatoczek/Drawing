@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA287D552510FD0000079273 /* CustomTempControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA287D542510FD0000079273 /* CustomTempControl.swift */; };
 		AA83DD92250CB2D8005C2921 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83DD91250CB2D8005C2921 /* AppDelegate.swift */; };
 		AA83DD94250CB2D8005C2921 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83DD93250CB2D8005C2921 /* SceneDelegate.swift */; };
 		AA83DD96250CB2D8005C2921 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83DD95250CB2D8005C2921 /* MainVC.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA287D542510FD0000079273 /* CustomTempControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTempControl.swift; sourceTree = "<group>"; };
 		AA83DD8E250CB2D8005C2921 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA83DD91250CB2D8005C2921 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA83DD93250CB2D8005C2921 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				AAB3C8BB250E45D500B25F8A /* LoadingRing.swift */,
 				AAB3C8BD250E565F00B25F8A /* LoadingRingDots.swift */,
 				AAE95DFF250FB1E200A22B95 /* RotatingLoadingRing.swift */,
+				AA287D542510FD0000079273 /* CustomTempControl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				AAA571A2250CE0E700D514E9 /* GradientView.swift in Sources */,
 				AAB3C8BC250E45D500B25F8A /* LoadingRing.swift in Sources */,
 				AAA571A4250CEB1700D514E9 /* TransformationsView.swift in Sources */,
+				AA287D552510FD0000079273 /* CustomTempControl.swift in Sources */,
 				AAB3C8BE250E565F00B25F8A /* LoadingRingDots.swift in Sources */,
 				AA83DD94250CB2D8005C2921 /* SceneDelegate.swift in Sources */,
 				AA83DDAB250CC019005C2921 /* StrokesFills.swift in Sources */,

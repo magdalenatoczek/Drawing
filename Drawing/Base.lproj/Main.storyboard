@@ -45,7 +45,7 @@
                                                             <constraint firstAttribute="height" constant="240" id="VER-vN-iGU"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boB-rc-Nfe">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boB-rc-Nfe" customClass="CustomTempControl" customModule="Drawing" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="780" width="374" height="240"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>

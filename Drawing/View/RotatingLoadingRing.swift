@@ -29,6 +29,12 @@ class RotatingLoadingRing: UIView {
     override func didMoveToSuperview() {
         
         
+
+      
+        
+        
+        
+        
         let b = (bounds.width - bounds.height)/2
         
         circleLayer.frame = CGRect(x:b, y:circleSize, width: circleSize, height:  circleSize)
@@ -36,14 +42,21 @@ class RotatingLoadingRing: UIView {
         circleLayer.backgroundColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
         
         
-                       
-        
         let animation2 = CABasicAnimation(keyPath: "opacity")
                    animation2.fromValue = 1
                    animation2.toValue = 0
                    animation2.duration = 3
                    animation2.repeatCount = .infinity
                    circleLayer.add(animation2, forKey: nil)
+        
+       let animation3 = CABasicAnimation(keyPath: "transform.scale")
+        animation3.valueFunction = CAValueFunction(name: CAValueFunctionName.scale)
+        animation3.fromValue = [1,1,1]
+        animation3.toValue = [1.5,1.5,0]
+        animation3.duration = 3
+        animation3.autoreverses = true
+        animation3.repeatCount = .infinity
+        circleLayer.add(animation3, forKey: nil)
         
         
         
